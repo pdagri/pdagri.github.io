@@ -1,3 +1,4 @@
+
 window.onload = () => {
     const button = document.querySelector('button[data-action="change"]');
     button.innerText = '﹖';
@@ -11,10 +12,9 @@ function staticLoadPlaces() {
         {
             name: 'Pokèmon',
             location: {
-                lat: 0,
-                lng: 0,
-               // lat: 48.809024,
-               // lng: 2.421829,
+                // decomment the following and add coordinates:
+                 lat: 2.421833,
+                 lng: 48.809028,
             },
         },
     ];
@@ -23,20 +23,20 @@ function staticLoadPlaces() {
 var models = [
     {
         url: './assets/magnemite/scene.gltf',
-        scale: '0.1 0.1 0.1',
+        scale: '0.5 0.5 0.5',
         info: 'Magnemite, Lv. 5, HP 10/10',
-        rotation: '0 0 0',
+        rotation: '0 180 0',
     },
     {
         url: './assets/articuno/scene.gltf',
-        scale: '0.1 0.1 0.1',
-        rotation: '0 0 0',
+        scale: '0.2 0.2 0.2',
+        rotation: '0 180 0',
         info: 'Articuno, Lv. 80, HP 100/100',
     },
     {
         url: './assets/dragonite/scene.gltf',
-        scale: '0.1 0.1 0.1',
-        rotation: '0 0 0',
+        scale: '0.08 0.08 0.08',
+        rotation: '0 180 0',
         info: 'Dragonite, Lv. 99, HP 150/150',
     },
 ];
